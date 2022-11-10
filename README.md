@@ -13,7 +13,8 @@ Stateless Widget dapat diartikan sebagai Widget yang tidak dapat dirubah atau ti
 * MaterialApp: untuk menciptakan widget-widget umum yang mengikuti Material Design
 * Scaffold: untuk menciptakan struktur layout Material Design
 * StatefulWidget: untuk menciptakan widget yang bisa berubah-ubah statenya
-* Statelesswidget: untuk mencipatakan widget yang tidak bisa berubah state
+* Statelesswidget: untuk mencipatakan widget yang tidak bisa berubah statenya
+* Floating Action Button : sebuah tombol yang berbentuk lingkaran dan ditampilkan seperti melayang untuk suatu primary action
 
 ## Fungsi dari setState()
 Fungsi setState() yang akan bertugas untuk memberitahu framework bahwa ada object yang berubah pada State, kemudian akan melakukan build ulang pada Widget tersebut. Kita hanya bisa menggunakan fungsi ini pada StatefulWidget, karena seperti yang telah dijelaskan di atas, Stateless widget tidak dapat dirubah. Variabel yang dapat diubah dengan setState() adalah variabel yang diubah di dalam body function setState()
