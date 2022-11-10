@@ -7,16 +7,16 @@ Elemen Dasar Flutter
 Stateless Widget dapat diartikan sebagai Widget yang tidak dapat dirubah atau tidak akan pernah berubah. Sedangkan Stateful Widget merupakan widget yang dinamis atau dapat berubah. Berbanding terbalik dengan stateless, stateful widget dapat mengupdate tampilan, merubah warna, menambah jumlah baris dll. Jadi dapat disimpulkan bahwa apapun widget yang dapat berubah maka itulah stateful widget.
 
 ## Widget yang digunakan pada Tugas 7
-* Text: menciptakan teks.
-* Row, Column: menciptakan layout yang flexible (seperti flexbox).
-* Container: menciptakan elemen persegi panjang.
-* MaterialApp: menciptakan widget-widget umum yang mengikuti Material Design.
-* Scaffold: menciptakan struktur layout Material Design.
-* StatefulWidget: menciptakan widget yang bisa berubah-ubah statenya.
-* Statelesswidget: mencipatakan widget yang tidak bisa berubah state.
+* Text: untuk membuat teks.
+* Row, Column: untuk menciptakan layout yang flexible
+* Container: untuk menciptakan elemen persegi panjang
+* MaterialApp: untuk menciptakan widget-widget umum yang mengikuti Material Design
+* Scaffold: untuk menciptakan struktur layout Material Design
+* StatefulWidget: untuk menciptakan widget yang bisa berubah-ubah statenya
+* Statelesswidget: untuk mencipatakan widget yang tidak bisa berubah state
 
 ## Fungsi dari setState()
-Fungsi setState() yang akan bertugas untuk memberitahu framework bahwa ada object yang berubah pada State, kemudian akan melakukan build ulang pada Widget tersebut. Kita hanya bisa menggunakan fungsi ini pada StatefulWidget, karena seperti yang telah dijelaskan di atas, Stateless widget tidak dapat dirubah.
+Fungsi setState() yang akan bertugas untuk memberitahu framework bahwa ada object yang berubah pada State, kemudian akan melakukan build ulang pada Widget tersebut. Kita hanya bisa menggunakan fungsi ini pada StatefulWidget, karena seperti yang telah dijelaskan di atas, Stateless widget tidak dapat dirubah. Variabel yang dapat diubah dengan setState() adalah variabel yang diubah di dalam body function setState()
 
 ## Perbedaan antara ‘const’ dengan ‘final’
 * `final` dan `const` merupakan keyword yang dapat digunakan untuk membuat variabel yang bersifat immutable.
@@ -30,5 +30,5 @@ Fungsi setState() yang akan bertugas untuk memberitahu framework bahwa ada objec
 5. Bonus : Memodifikasi tombol decrement supaya hanya muncul saat counter>0 dengan menggunakan `if (_counter > 0)` pada floating action button 
 
 ## Referensi
-https://belajarflutter.com/
-https://arbiyanto.medium.com/memahami-perbedaan-stateless-vs-stateful-widget-flutter-e8ea12e46ac
+* https://belajarflutter.com/
+* https://arbiyanto.medium.com/memahami-perbedaan-stateless-vs-stateful-widget-flutter-e8ea12e46ac
