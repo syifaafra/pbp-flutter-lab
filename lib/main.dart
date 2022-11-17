@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:counter_7/page/budget_form_page.dart';
+import 'package:counter_7/page/budgets_data_page.dart';
+import 'package:counter_7/widget/drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: MyDrawer(),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.

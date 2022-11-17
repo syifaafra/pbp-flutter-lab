@@ -33,3 +33,55 @@ Fungsi setState() yang akan bertugas untuk memberitahu framework bahwa ada objec
 ## Referensi
 * https://belajarflutter.com/
 * https://arbiyanto.medium.com/memahami-perbedaan-stateless-vs-stateful-widget-flutter-e8ea12e46ac
+
+# Tugas 8
+Flutter Form
+
+## Link Assignments
+https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tugas/tugas-8
+
+## Perbedaan Navigator.push dan Navigator.pushReplacement.
+Method push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini sehingga halaman baru ditampilkan di atas halaman sebelumnya. Sedangkan method pushReplacement menghapus rute saat ini dengan menggantinya ke rute yang baru sehingga kita tidak dapat kembali ke halaman sebelumnya.
+
+## Widget yang kamu dipakai di proyek kali ini dan fungsinya.
+* Text: untuk membuat teks.
+* Row, Column: untuk menciptakan layout yang flexible
+* Container: untuk menciptakan elemen persegi panjang
+* MaterialApp: untuk menciptakan widget-widget umum yang mengikuti Material Design
+* Scaffold: untuk menciptakan struktur layout Material Design
+* StatefulWidget: untuk menciptakan widget yang bisa berubah-ubah statenya
+* Statelesswidget: untuk mencipatakan widget yang tidak bisa berubah statenya
+* ListTile: untuk membuat list berupa tile (ubin)
+* TextFormField: untuk form field yang dapat diisi dengan Text
+* DropdownButton : untuk button dropdown sebagai form field
+* TextButton : untuk button dengan text
+* Card : untuk material yang dapat menampilkan informasi
+
+## Jenis-jenis event yang ada pada Flutter 
+* `onChange`: event saat terjadi perubahan pada widget atau elemen
+* `onTap`: event saat widget diketuk
+* `onFocusChange`: event saat fokus dari widget berubah
+* `onSaved`: event saat elemen disimpan
+* `onPressed`: event saat widget ditekan
+* `onLongPressed`: event saat widget ditekan dengan lama
+* `onSubmitted`: event saat data sudah disubmit
+* `onEditingComplete`: event saat sudah selesai mengedit data
+
+## Cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Widget Navigator menampilkan layar seakan sebagai sebuah tumpukan (stack). Untuk menavigasi sebuah halaman baru, kita dapat mengakses Navigator melalui BuildContext dan memanggil fungsi push() atau pop().
+
+## Cara Implementasi
+1. Membuat folder-folder berikut pada folder `lib`:
+- `model` yang berisi `budget.dart`
+- `page` yang berisi `budget_form_page.dart` dan `budget_data_page.dart`
+- `widget` yang berisi `drawer.dart`
+2. Pada `drawer.dart` dibuat class MyDrawer yang berisi widget Navigator untuk menavigasi halaman lain
+3. Pada `main.dart`, `budget_form_page.dart` dan `budget_data_page.dart` kita hanya perlu menggunakan class MyDrawer tersebut untuk membuat widget drawer
+4. Pada `budget_form_page.dart` dibuat class MyFormPage sebagai form untuk menambahkan data budget dengan mengikuti tutorial 7
+5. Pada `budget_data_page.dart` dibuat class MyDataBudgetPage untuk menambilkan data seluruh budget yang sudah ditambahkan
+6. Pada `budget.dart` dibuat class `Budget` sebagai model dari objek budget dan class `Budgets` untuk menyimpan data sseluruh budget yang sudah ditambahkan
+
+
+## Referensi
+https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tutorial/tutorial-7
+https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
