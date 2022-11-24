@@ -100,6 +100,11 @@ Ya, kita dapat mengambil data JSON tanpa membuat model dengan menggunakan fungsi
 * Checkbox : untuk menampilkan kotak yang dapat diklik untuk memperbaharui suatu nilai
 
 ## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+* Membuat model berupa class yang memiliki atribut yang sesuai dengan data yang ingin diambil
+* Menggunakan fungsi `fromJson()` untuk mengubah data JSON ke bentuk model
+* Membuat map dengan nama `toJson()`
+* Membuat fungsi asinkronus untuk melakukan fetching data JSON dari url dengan bantuan http request
+* Menampilkan data pada page yang sesuai
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Membuat class `MyWatchListPage` dan menambahkan route nya ke dalam `MyDrawer`
