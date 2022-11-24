@@ -1,6 +1,4 @@
-# Tugas 7 PBP
-
-Elemen Dasar Flutter
+# Tugas 7 PBP : Elemen Dasar Flutter
 
 ## Stateless widget dan Stateful widget
 
@@ -34,8 +32,7 @@ Fungsi setState() yang akan bertugas untuk memberitahu framework bahwa ada objec
 * https://belajarflutter.com/
 * https://arbiyanto.medium.com/memahami-perbedaan-stateless-vs-stateful-widget-flutter-e8ea12e46ac
 
-# Tugas 8
-Flutter Form
+# Tugas 8 : Flutter Form
 
 ## Link Assignments
 https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tugas/tugas-8
@@ -85,3 +82,28 @@ Widget Navigator menampilkan layar seakan sebagai sebuah tumpukan (stack). Untuk
 ## Referensi
 https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tutorial/tutorial-7
 https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
+
+# Tugas 9 : Integrasi Web Service pada Flutter
+
+## Link Assignments
+https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tugas/tugas-9
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Ya, kita dapat mengambil data JSON tanpa membuat model dengan menggunakan fungsi `jsonDecode()` dan mengambil value yang dibutuhkan pada `Map<String, dynamic>`. Cara ini tidak memiliki persiapan sehingga baik untuk pembuktian konsep. Namun, jika proyek yang dikerjakan cukup besar, menggunakan cara ini rawan terjadi kesalahan apabila terdapat typo sehinnga rawan terjadi runtime rror.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* Text: untuk membuat teks.
+* Row, Column: untuk menciptakan layout yang flexible
+* Container: untuk menciptakan elemen persegi panjang
+* ListTile: untuk membuat list judul film dengan bentuk berupa card
+* ListView : untuk menampung widget
+* Checkbox : untuk menampilkan kotak yang dapat diklik untuk memperbaharui suatu nilai
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Membuat class `MyWatchListPage` dan menambahkan route nya ke dalam `MyDrawer`
+2. Membuat model `MyWatchList` untuk mengubah data JSON dari tugas 3 ke dalam bentuk model
+3. Melakukan fetching data dari web service kemudian menampilkannya ke aplikasi dengan membuat fungsi `fetchWatchList()` pada `fetch_mywatchlist.dart`
+4. Menambahkan checkbox dan border berwwarna pada `ListTile` untuk masing-masing judul
+5. Membuat class `DetailScreen` untuk menampilkan detail masing-masing film

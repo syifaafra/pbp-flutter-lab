@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:counter_7/page/budget_form_page.dart';
 import 'package:counter_7/page/budgets_data_page.dart';
+import 'package:counter_7/page/mywatchlist_page.dart';
 import 'package:counter_7/main.dart';
 
 class MyDrawer extends StatefulWidget{
@@ -44,6 +45,16 @@ class _MyDrawerState extends State<MyDrawer> {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => MyDataBudgetPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('My Watch List'),
+            onTap: () {
+              // Route menu ke halaman form
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => MyWatchListPage()),
               );
             },
           ),
